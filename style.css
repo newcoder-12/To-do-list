@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* height: 90vh; */
+  background-color: #faedcd;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  /* background-color: #faedcd; */
+  margin-top: 15px;
+  padding: 30px;
+  height: 70vh;
+  width: 90vw;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav_header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.date-display {
+  font-size: 1.2em;
+  color: #555;
+  text-align: left;
+  width: 250px;
+  border: 2px solid transparent;
+  background-color: rgb(190, 229, 216);
+  padding: 10px 10px;
+  border-radius: 13px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 8px;
+  color: #333;
+  font-family: poppins, sans-serif;
+}
+
+
+
+.input-box{
+margin-bottom: 20px;
+}
+
+#taskInput /* input[type="text"]  --  anything can be written */ {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#addBtn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  margin-left: 60px;
+  cursor: pointer;
+}
+
+li {
+    list-style: none;
+    padding: 8px 100px;
+    cursor: pointer;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+small{
+font-size: 0.6em;
+color: #888;
+gap: 5px;
+}
+
+.delete-btn{
+margin-left: auto;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgb(255, 249, 249);
+}
+
+.completed .delete-btn {
+    background-color: #28a745;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+
+.archiveBox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #e0741c;
+  border-radius: 5px;
+  height: 25vh;
+  width: 90vw;
+  padding: 10px;
+  overflow-y: auto;
+  flex-direction: column;
+}
+.archiveBox h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+#archiveList {
+    width: 100%;
+    color: white;
+    font-size: 1em;
+}

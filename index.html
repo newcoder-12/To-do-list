@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="nav_header">
+      <h1>My Todo List</h1>
+      <span class="date-display">Date : </span>
+    </div>
+
+    <div class="input-box">
+      <input type="text" id="taskInput" placeholder="Enter your task">
+      <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <div class="archiveBox" id="archive-box">
+    <h2>Archived Tasks</h2>
+    <ul id="archiveList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
